@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vegan Dream</title>
   <link rel="stylesheet" href="styles.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header>
+    <div id="social-icons">
+      <a href="https://www.instagram.com/your_instagram_profile"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="https://www.pinterest.com/your_pinterest_profile"><img src="pinterest-icon.png" alt="Pinterest"></a>
+      <a href="https://www.facebook.com/your_facebook_page"><img src="facebook-icon.png" alt="Facebook"></a>
+    </div>
     <h1>Vegan Dream</h1>
     <nav>
       <ul>
@@ -17,6 +25,10 @@
         <li><a href="#about-me">About Me</a></li>
       </ul>
     </nav>
+      <div id="search-bar">
+      <input type="text" placeholder="Suche...">
+      <button type="submit">Suchen</button>
+    </div>
   </header>
   
   <main>
@@ -43,8 +55,10 @@
 
     <section id="more-about-me">
       <h2>More about me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eleifend massa, nec sollicitudin arcu lobortis nec. Mauris condimentum ligula sit amet urna tempor, vel ultricies quam fringilla.</p>
-      <p>Nullam vel mi non libero feugiat tempus. Sed bibendum felis eu nisl volutpat, id dapibus dolor ultricies. Donec luctus a ex nec sollicitudin.</p>
+      <img src="about-me-image.jpg" alt="About Me Image">
+      <p>Herzlich willkommen liebe Grünlinge! Hier kommt mein persönlicher Foodblog für vegane reinpflanzliche Genüsse, viele nützliche Tipps und tolle Lifestyle-Themen rund um die veganen Genüsse im Leben!</p>
+      <p>
+Ich freue mich, Dich zu einer spannenden Reise durch meine Welt einzuladen. Tauche ein in meine vielfältigen Interessen und Leidenschaften, entdecke neue Perspektiven und genieße gemeinsame Momente des Lernens und der Inspiration. Lass uns zusammen Neues erkunden, unvergessliche Erfahrungen teilen und viele neue Leckereien entdecken. Ich freue mich darauf, dich kennenzulernen und dich mitzunehmen!</p>
     </section>
 
     <section id="newsletter">
@@ -62,6 +76,7 @@
 
   <footer>
     <p>&copy; 2024 Vegan Dream</p>
+    <button id="to-top-btn"><img src="up-arrow.png" alt="To Top"></button>
   </footer>
 
   <script src="script.js"></script>
@@ -97,6 +112,11 @@
       // Optionally, you can show a success message or redirect the user after form submission
       alert("Subscription successful!");
       this.reset(); // Reset form fields
+    });
+
+    // Scroll to top functionality
+    document.getElementById("to-top-btn").addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
