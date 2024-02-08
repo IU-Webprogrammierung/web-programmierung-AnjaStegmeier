@@ -1,52 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegan Dream - Foodblog</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        
-        .header-image {
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegan Dream</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <img class="header-image" src="/Bilder/cherries.jpg" <h1> Vegan Dream </h1>
-
-
-
-    <h2>Plant based explosion for your mouth</h2> <br> <br>
-
-    <h3>Begrüßung</h3>
-
-
+  <header>
+    <h1>Vegan Dream</h1>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#categories">Receipts</a></li>
-
-            <li><a href="#highlight">Monthly Highlight</a></li>
-
-            <li><a href="#about">About me</a></li>
-
-            <!--<li><a href="#subscribe">Subscribe</a></li>-->
-
-
-
-        </ul>
+      <ul>
+        <li><a href="#recipes">Rezepte</a></li>
+        <li><a href="#weekly-highlight">Weekly Highlight</a></li>
+        <li><a href="#lifestyle">Lifestyle</a></li>
+        <li><a href="#about-me">About Me</a></li>
+      </ul>
     </nav>
+  </header>
+  
+  <main>
+    <section id="hero-image">
+      <img src="hero-image.jpg" alt="Hero Image">
+    </section>
 
-    <section id="home"> </section>
-    <section id="Rezeptkategorien"> </section>
+    <section id="latest-posts">
+      <h2>Latest Posts</h2>
+      <div id="slider">
+        <div class="slide">
+          <img src="post1.jpg" alt="Post 1">
+          <h3>Post 1 Title</h3>
+          <p>Description of Post 1</p>
+        </div>
+        <div class="slide">
+          <img src="post2.jpg" alt="Post 2">
+          <h3>Post 2 Title</h3>
+          <p>Description of Post 2</p>
+        </div>
+        <!-- Add more slides here -->
+      </div>
+    </section>
 
+    <section id="more-about-me">
+      <h2>More about me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eleifend massa, nec sollicitudin arcu lobortis nec. Mauris condimentum ligula sit amet urna tempor, vel ultricies quam fringilla.</p>
+      <p>Nullam vel mi non libero feugiat tempus. Sed bibendum felis eu nisl volutpat, id dapibus dolor ultricies. Donec luctus a ex nec sollicitudin.</p>
+    </section>
+
+    <section id="newsletter">
+      <h2>Newsletter Subscription</h2>
+      <form id="newsletter-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Other sections here -->
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Vegan Dream</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Slider functionality
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    // Newsletter subscription functionality
+    document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Get form data
+      let formData = new FormData(this);
+
+      // Send form data to backend (here you can use AJAX to send data to server)
+      // For demonstration purposes, we'll just log the email to the console
+      for (let pair of formData.entries()) {
+        console.log(pair[0] + ": " + pair[1]);
+      }
+
+      // Optionally, you can show a success message or redirect the user after form submission
+      alert("Subscription successful!");
+      this.reset(); // Reset form fields
+    });
+  </script>
 </body>
-
 </html>
