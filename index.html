@@ -1,66 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vegan Dream</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <header>
-    <div id="social-icons">
-      <a href="https://www.instagram.com/your_instagram_profile"><img src="instagram-icon.png" alt="Instagram"></a>
-      <a href="https://www.pinterest.com/your_pinterest_profile"><img src="pinterest-icon.png" alt="Pinterest"></a>
-      <a href="https://www.facebook.com/your_facebook_page"><img src="facebook-icon.png" alt="Facebook"></a>
-    </div>
-    <h1>Vegan Dream</h1>
+    <div class="logo-container">
+      <img src="Veganer Foodblog/Bilder/logo.png" alt="Vegan Dream Logo"></div>
+     <div><h1>Vegan Dream</h1></div>
+    <div class="menü-container"></div>
     <nav>
+
       <ul>
-        <li><a href="#recipes">Rezepte</a></li>
-        <li><a href="#weekly-highlight">Weekly Highlight</a></li>
-        <li><a href="#lifestyle">Lifestyle</a></li>
-        <li><a href="#about-me">About Me</a></li>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="rezepte.html">Rezepte</a></li>
+        <li><a href="weekly-highlight.html">Weekly Highlight</a></li>
+        <li><a href="lifestyle.html">Lifestyle</a></li>
+        <li><a href="about-me.html">About Me</a></li>
       </ul>
+      
     </nav>
-      <div id="search-bar">
+  </div>
+    <div id="search-bar">
       <input type="text" placeholder="Suche...">
       <button type="submit">Suchen</button>
     </div>
   </header>
-  
-  <main>
-    <section id="hero-image">
-      <img src="hero-image.jpg" alt="Hero Image">
-    </section>
-
-    <section id="latest-posts">
-      <h2>Latest Posts</h2>
-      <div id="slider">
-        <div class="slide">
-          <img src="post1.jpg" alt="Post 1">
-          <h3>Post 1 Title</h3>
-          <p>Description of Post 1</p>
-        </div>
-        <div class="slide">
-          <img src="post2.jpg" alt="Post 2">
-          <h3>Post 2 Title</h3>
-          <p>Description of Post 2</p>
-        </div>
-        <!-- Add more slides here -->
+  <section id="latest-posts">
+    <h2>Latest Posts</h2>
+   
+    <main>
+      <div class="pic">
+        <img src="Veganer Foodblog/Bilder/cherries.jpg" alt="cherries" style="width:100%">
+        <h3>Cherries, interrupted</h3>
+        <p>So much underrated and one of the best deliverables of antioxidants in the fruit universe.</p>
+        <p>What else do you want?</p>
       </div>
-    </section>
+  
+      
+      <div class="pic2">
+        <img src="Veganer Foodblog/Bilder/croissant dark.jpg" alt="croissant" style="width:100%">
+        <h3>Le French</h3>
+        <p>How to make the best vegan croissants by yourself and where to find the best ones in Munich.</p>
+      </div>
+  
+      <div class="greens">
+        <img src="Veganer Foodblog/Bilder/greens.jpg" alt="greens" style="width:100%">
+        <h3>5 reasons to go plant based</h3>
+        <p>I will show you the advantages of plant based diet and what it makes with your body.</p>
+      </div>
+  </section>
 
-    <section id="more-about-me">
-      <h2>More about me</h2>
-      <img src="about-me-image.jpg" alt="About Me Image">
-      <p>Herzlich willkommen liebe Grünlinge! Hier kommt mein persönlicher Foodblog für vegane reinpflanzliche Genüsse, viele nützliche Tipps und tolle Lifestyle-Themen rund um die veganen Genüsse im Leben!</p>
-      <p>
-Ich freue mich, Dich zu einer spannenden Reise durch meine Welt einzuladen. Tauche ein in meine vielfältigen Interessen und Leidenschaften, entdecke neue Perspektiven und genieße gemeinsame Momente des Lernens und der Inspiration. Lass uns zusammen Neues erkunden, unvergessliche Erfahrungen teilen und viele neue Leckereien entdecken. Ich freue mich darauf, dich kennenzulernen und dich mitzunehmen!</p>
-    </section>
+    <p>Herzlich willkommen liebe Grünlinge! <br><br>
+      Hier kommt mein persönlicher Foodblog <br>
+      für vegane reinpflanzliche Genüsse, viele <br>
+      nützliche Tipps und tolle Lifestyle-Themen <br>
+      rund um die veganen Genüsse im Leben!</p>
+  <p>
+    Ich freue mich, Dich zu einer spannenden <br>
+    Reise durch meine Welt einzuladen. <br>
+    Tauche ein in meine vielfältigen Interessen <br>
+    und Leidenschaften, entdecke neue Perspektiven <br>
+    und genieße gemeinsame Momente des Lernens <br>
+    und der Inspiration. <br>
+    Lass uns zusammen Neues erkunden, unvergessliche <br>
+    Erfahrungen teilen und viele neue Leckereien <br>
+    entdecken. Ich freue mich darauf, <br>
+    dich kennenzulernen und dich mitzunehmen!</p>
 
+    <div class="me-container">
+      <img src="Veganer Foodblog/Bilder/me.jpg" alt="me" style="width:100%">
+      <h3>Me, the creative one behind this blog!</h3>
+    </div>
+
+    </main>
+
+  <footer>
+    
     <section id="newsletter">
       <h2>Newsletter Subscription</h2>
       <form id="newsletter-form">
@@ -70,54 +92,11 @@ Ich freue mich, Dich zu einer spannenden Reise durch meine Welt einzuladen. Tauc
       </form>
     </section>
 
-    <!-- Other sections here -->
-
-  </main>
-
-  <footer>
     <p>&copy; 2024 Vegan Dream</p>
     <button id="to-top-btn"><img src="up-arrow.png" alt="To Top"></button>
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    // Slider functionality
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let slides = document.getElementsByClassName("slide");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      slides[slideIndex-1].style.display = "block";  
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-
-    // Newsletter subscription functionality
-    document.getElementById("newsletter-form").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevent default form submission
-
-      // Get form data
-      let formData = new FormData(this);
-
-      // Send form data to backend (here you can use AJAX to send data to server)
-      // For demonstration purposes, we'll just log the email to the console
-      for (let pair of formData.entries()) {
-        console.log(pair[0] + ": " + pair[1]);
-      }
-
-      // Optionally, you can show a success message or redirect the user after form submission
-      alert("Subscription successful!");
-      this.reset(); // Reset form fields
-    });
-
-    // Scroll to top functionality
-    document.getElementById("to-top-btn").addEventListener("click", function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
+  
 </body>
 </html>

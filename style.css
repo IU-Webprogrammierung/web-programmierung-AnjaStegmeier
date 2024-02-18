@@ -1,77 +1,197 @@
-/* styles.css */
+/* Allgemeines */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 body {
-    font-family: Open Sans, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  footer {
-    position: relative;
-  }
-  
-  #to-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+  font-family: Open Sans, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: #376d58;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Hovereffekte für die Menükategorien */
+
+nav ul li a {
+  color: #fff; /* Standardfarbe auf Weiß setzen */
+  transition: color 0.3s ease; /* Sanften Farbwechsel aktivieren */
+}
+
+nav ul li a:hover {
+  color: #CFE0C3; /* Farbe beim Darüberfahren auf #CFE0C3 ändern */
+  font-weight: bold; /* Schriftstärke für Betonung erhöhen */
+  background-color: rgba(0, 0, 0, 0.1); /* Dezente Hintergrundfarbe beim Darüberfahren hinzufügen */
+}
+
+/* Weitere Styles */
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.centered-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #1F363D;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+#to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#to-top-btn:hover {
+  background-color: #0056b3;
+}
+
+#social-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#social-icons a {
+  margin-left: 10px;
+  filter: invert(1);
+}
+
+/* Zentrierung aller Inhalte auf der About Me-Seite */
+
+.about-me-content {
+  text-align: center;
+}
+
+.about-me-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Zentrierung der Seitenüberschrift "About Me" */
+
+section h2 {
+  text-align: center;
+}
+
+/* Optionales Grid-Layout für Kategorien */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.category a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.pic, .pic2, .greens {
+  float: left;
+  width: 25%;  
+  flex: 1 1 auto;
+  margin: 0 2% 2% 0;
+  position: relative;
+  z-index: 0;
+}
+
+.pic img {
+  width: 100%;
+  height: 200px; /* Passen Sie die Höhe an Ihre Bedürfnisse an */
+  object-fit: cover;
+}
+
+.pic2 img {
+  width: 100%;
+  height: 200px; /* Passen Sie die Höhe an Ihre Bedürfnisse an */
+  object-fit: cover;
+}
+
+.greens img {
+  width: 100%;
+  height: 200px; /* Passen Sie die Höhe an Ihre Bedürfnisse an */
+  object-fit: cover;
+}
+#latest-posts {
+  display: flex;
+  flex-wrap: wrap;  
+  position: relative;
+}
+.logo-container {
+  position: relative;
+}
+
+.h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.me-container {
+  display: grid;
+  justify-items: end;
+}
+
+.me {
+  grid-column: 1;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    float: right;
   }
   
-  #to-top-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Bisherige Styles */
-  
-  #social-icons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  #social-icons a {
-    margin-left: 10px; /* Abstand zwischen den Icons */
-  }
-  
+
+
