@@ -117,7 +117,7 @@ footer p {
 /* Zentrierung der Seitenüberschrift "About Me" */
 
 section h2 {
-  text-align: center;
+  text-align: left;
 }
 
 /* Optionales Grid-Layout für Kategorien */
@@ -173,6 +173,7 @@ section h2 {
 }
 .logo-container {
   position: relative;
+  height: 100px;
 }
 
 .h1 {
@@ -182,16 +183,33 @@ section h2 {
   transform: translate(-50%, -50%);
 }
 
-.me-container {
-  display: grid;
-  justify-items: end;
+
+.profile {
+  display: flex;
+  flex-direction: row-reverse; /* Das Bild wird rechtsbündig ausgerichtet */
+  align-items: center; /* Vertikal zentrieren */
+  margin-bottom: 20px; /* Einen Abstand unter dem Bild hinzufügen */
 }
 
-.me {
-  grid-column: 1;
-    border-radius: 50%;
-    float: right;
+.about-me-text {
+  width: 50%; /* Die Breite des Textbereichs festlegen */
+}
+
+@media (max-width: 768px) {
+  /* CSS für kleinere Bildschirme */
+  .profile {
+    flex-direction: column; /* Das Bild wird auf kleinere Bildschirme gestapelt */
+    align-items: flex-start; /* Das Bild wird am Anfang des Texts ausgerichtet */
   }
-  
 
+  .about-me-text {
+    width: 100%; /* Den Textbereich auf volle Breite setzen */
+  }
+}
 
+.me img {
+  height: 100x;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+}
