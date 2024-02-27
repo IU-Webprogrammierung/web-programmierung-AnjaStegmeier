@@ -14,11 +14,11 @@ header {
   font-size: larger;
   font-style: initial;
   font-stretch: extra-expanded;
-  padding: 10px 0px;
+  padding: 10px 20px;
 }
 .headline {
   align: center;
-  margin: 0.67em 0;
+  width: 100%;
 }
 nav ul {
   list-style-type: none;
@@ -180,7 +180,9 @@ footer p {
   transform: translate(-50%, -50%);
 }
 /* Inhaltformatierung Rezepte-Seite */
-
+.bodyrezepte {
+  background-color: #f2f2f2;
+}
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -191,6 +193,11 @@ footer p {
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
+}
+.category-container1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Abstand zwischen den Kategorien */
 }
 
 .category a {
@@ -234,6 +241,17 @@ footer p {
 height: auto;
 Width: 150px;
 }
+
+.custom-button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px; /* Obere und untere Polsterung: 15px, linke und rechte Polsterung: 30px */
+  border: none;
+  border-radius: 10px; /* Runde Ecken */
+  cursor: pointer;
+}
+
 /* Inhaltformatierung Croissant Rezept */
 
 .rezept-beschreibung {
