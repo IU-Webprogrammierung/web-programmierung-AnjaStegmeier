@@ -7,7 +7,7 @@ body {
 
 }
 header {
-  background-color: #fafafa;
+  background-color: #99c175;
   color: #363535;
   text-align: center;
   font-family: "papyrus";
@@ -19,6 +19,7 @@ header {
 .headline {
   align: center;
   width: 100%;
+  letter-spacing: 20px;
 }
 nav ul {
   list-style-type: none;
@@ -28,7 +29,7 @@ nav ul li {
   display: inline;
   margin-right: 30px;
   margin-left:30px;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 /* Hovereffekte für die Menükategorien */
@@ -64,7 +65,7 @@ section {
 }
 
 footer {
-  background-color: #1F363D;
+  background-color: #99c175;
   color: #fff;
   padding: 10px 0;
   margin-top: 450px;
@@ -92,7 +93,7 @@ footer p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color: #197211;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -104,7 +105,7 @@ footer p {
 }
 
 #to-top-btn:hover {
-  background-color: #0056b3;
+  background-color: #57a450;
 }
 
 #social-icons {
@@ -152,10 +153,20 @@ footer p {
   margin: 0 2% 2% 0;
   position: relative;
   z-index: 0;
-  margin-left:50px;
-  margin-right: 50px;
-  margin-bottom: 150px;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-left:40px;
+  margin-right:40px;
 }
+@media screen and (max-width: 768px) {
+  .pic,
+  .pic2,
+  .greens {
+    width: 100%; /* Ändert die Breite auf 100% bei Bildschirmen kleiner als 768px */
+    margin-right: 0;
+  }
+}
+
 .pic img {
   width: 100%;
   height: 200px; 
@@ -183,6 +194,7 @@ footer p {
 .bodyrezepte {
   background-color: #f2f2f2;
 }
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -194,61 +206,34 @@ footer p {
   padding: 20px;
   text-align: center;
 }
-.category-container1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px; /* Abstand zwischen den Kategorien */
-}
 
 .category a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
 }
-.min-gericht {
-    height: auto;
-    Width: 150px;
-}
-.asia {
-  height: auto;
-  Width: 150px;
-}
-.bowl {
-  height: auto;
-  Width: 150px;
-}
-.soup {
-  height: auto;
-  Width: 150px;
-}
-.sweets{
-  height: auto;
-  Width: 150px;
-}
-.pasta {
-  height: auto;
-  Width: 150px;
-}
-.dip {
-  height: auto;
-  Width: 150px;
-}
-.ofen {  
-  height: auto;
-  Width: 150px;
-}
+
+.min-gericht,
+.asia,
+.bowl,
+.frühstücksideen,
+.soup,
+.sweets,
+.pasta,
+.dip,
+.ofen,
 .durstlöscher {
-height: auto;
-Width: 150px;
+  height: 230px;
+  width: 150px;
 }
 
 .custom-button {
   background-color: black;
   color: white;
   font-size: 20px;
-  padding: 15px 30px; /* Obere und untere Polsterung: 15px, linke und rechte Polsterung: 30px */
+  padding: 15px 30px;
   border: none;
-  border-radius: 10px; /* Runde Ecken */
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -257,6 +242,24 @@ Width: 150px;
 .rezept-beschreibung {
   margin-left: 80px;
   margin-top: 100px;
+}
+
+.Anleitung-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Anleitung {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Anleitung img {
+  margin: 10px; /* Abstand zwischen den Bildern */
+  max-width: 100%; /* Bilder passen sich der Bildschirmgröße an */
+  height: auto;
 }
 /* Inhaltformatierung Weeklyseite */
 /* Inhaltformatierung Lifestyleseite */
