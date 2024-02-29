@@ -263,6 +263,45 @@ footer p {
 }
 /* Inhaltformatierung Weeklyseite */
 /* Inhaltformatierung Lifestyleseite */
+
+.beautyposts {
+  display: flex;
+  flex-wrap: wrap; /* Bei Bedarf umbrechen */
+  margin: -10px; /* Negative Außenabstände, um den Abstand zwischen den Elementen auszugleichen */
+}
+
+.beauty-item {
+  flex: 1; /* Jedes Element nimmt den verfügbaren Platz ein */
+  max-width: calc(50% - 20px); /* Jedes Element nimmt maximal 50% der Breite des Elternelements ein und berücksichtigt den Abstand */
+  padding: 10px; /* Platz um die Elemente herum */
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Seitenverhältnis für das Platzhalterbild */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden; /* Damit die Überschrift innerhalb des Bildes bleibt */
+}
+
+.thumbnail-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.thumbnails-container {
+  display: flex; /* Container als Flexbox anzeigen */
+  justify-content: space-between; /* Zwischenräume zwischen den Thumbnails */
+  flex-wrap: wrap; /* Bei Bedarf umbrechen */
+}
+
+.thumbnail-item {
+  flex: 0 0 calc(50% - 10px); /* Jedes Thumbnail soll 50% der Breite des Containers einnehmen und einen Abstand von 10px haben */
+  margin-bottom: 20px; /* Abstand zum nächsten Element */
+}
+
 /* Optionales Grid-Layout für Kategorien */
 
 .logo-container {
