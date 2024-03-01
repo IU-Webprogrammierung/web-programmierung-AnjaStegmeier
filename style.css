@@ -16,6 +16,23 @@ header {
   font-stretch: extra-expanded;
   padding: 10px 20px;
 }
+/* CSS für das Social Media Icon */
+.social-media {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* CSS für das Social Media Icon Bild */
+.social-media img {
+  width: 40px; /* Breite des Icons anpassen */
+  height: 40px; /* Höhe des Icons anpassen */
+}
+
+/* CSS für den Hover-Effekt des Icons */
+.social-media img:hover {
+  opacity: 0.8; /* Ändere die Opazität des Icons beim Hover-Effekt */
+}
 .headline {
   align: center;
   width: 100%;
@@ -108,15 +125,27 @@ footer p {
   background-color: #57a450;
 }
 
-#social-icons {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+/* CSS für den Container */
+/* CSS für die Social-Media-Icons */
+.social-media {
+  position: absolute; /* Absolut positioniert innerhalb des Headers */
+  top: 20px; /* Abstand vom oberen Rand */
+  right: 20px; /* Abstand vom rechten Rand */
 }
 
-#social-icons a {
-  margin-left: 10px;
-  filter: invert(1);
+.social-media a {
+  display: inline-block; /* Inline-Block-Elemente */
+  margin-left: 10px; /* Abstand zwischen den Icons */
+}
+
+.social-media img {
+  width: 40px; /* Breite der Icons */
+  height: 40px; /* Höhe der Icons */
+}
+/* CSS für die Hover-Effekte */
+.social-media img:hover {
+  transform: scale(1.2); /* Vergrößern des Icons beim Hovern */
+  opacity: 0.7; /* Reduzieren der Opazität beim Hovern */
 }
 
 /* Inhaltformatierung Index-Seite */
@@ -261,7 +290,29 @@ footer p {
   max-width: 100%; /* Bilder passen sich der Bildschirmgröße an */
   height: auto;
 }
+
+.schlusswort {
+  text-align: center;
+  padding-top: 10px;
+  font-size: larger;
+}
 /* Inhaltformatierung Weeklyseite */
+.weekly-highlight {
+ align-items: center;
+}
+
+.mealprep img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.mealprep2 img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
 /* Inhaltformatierung Lifestyleseite */
 
 .beautyposts {
@@ -409,7 +460,23 @@ font-size: 20;
 font-weight: bold; 
 }
 
+/* Formatierung Social Media Icons About me-Seite */
+/* CSS für den Container */
+.socialmediaaboutme {
+  display: flex; /* Flexbox verwenden */
+  justify-content: center; /* Bilder zentriert ausrichten */
+  flex-wrap: wrap; /* Bei Bedarf umbrechen */
+}
 
+.socialmediaaboutme img {
+  width: 50px; /* Breite des Icons */
+  height: 50px; /* Höhe des Icons */
+  margin: 5px; /* Abstand zwischen den Icons */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Übergangseffekte für Transformation und Opazität */
+}
 
-
-
+/* CSS für die Hover-Effekte */
+.socialmediaaboutme img:hover {
+  transform: scale(1.2); /* Vergrößern des Icons beim Hovern */
+  opacity: 0.7; /* Reduzieren der Opazität beim Hovern */
+}
