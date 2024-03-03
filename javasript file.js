@@ -85,3 +85,8 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
    document.getElementById("to-top-btn").addEventListener("click", function() {
      window.scrollTo({ top: 0, behavior: 'smooth' });
    });
+    // Funktion Hamburger Menü
+   function toggleMenu() {
+    var menü = document.querySelector('.menü');
+    menü.classList.toggle('show');
+  }
