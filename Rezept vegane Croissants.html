@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
+<!-- Social Media Icons -->
   <div class="social-media">
     <a href="LINK_ZU_DEINEM_INSTAGRAM_PROFIL"><img src="Veganer Foodblog/social media icons/instagram.png" alt="Instagram"></a>
     <a href="LINK_ZU_DEINEM_PINTEREST_PROFIL"><img src="Veganer Foodblog/social media icons/facebook (1).png" alt="Facebook"></a>
@@ -23,9 +23,12 @@
     
      
      <div><h1>Vegan Dream</h1></div>
-    <div class="menü-container"></div>
-    <nav>
-
+     <!-- Seitenübersicht/Menü -->
+     <div class="menü-container">
+      <!-- Hamburger Menü für kleinere Bildschirme (nur Botton) -->
+      <button class="hamburger-menu-icon" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <nav class="menü">
       <ul>
         <li><a href="index.html">Startseite</a></li>
         <li><a href="rezepte.html">Rezepte</a></li>
@@ -33,9 +36,7 @@
         <li><a href="lifestyle.html">Lifestyle</a></li>
         <li><a href="aboutme.html">About Me</a></li>
       </ul>
-      
     </nav>
-  </div>
     <div class="search-bar">
       <input type="text" placeholder="Suche...">
       <button type="submit">Suchen</button>
