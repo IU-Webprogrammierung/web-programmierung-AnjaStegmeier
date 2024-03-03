@@ -383,120 +383,119 @@ footer p {
 /* Zentrierung aller Inhalte auf der About Me-Seite */
 
 /* Zentrierung der Seitenüberschrift "About Me" */
+/* Allgemeine Stile */
+body {
+  font-family: 'Open Sans', sans-serif; /* Schriftart festlegen */
+  margin: 0; /* Außenabstand entfernen */
+  padding: 0; /* Innenabstand entfernen */
+}
+
+/* Stil für h2-Überschriften */
 section h2 {
   text-align: center;
   font-size: 40px;
+  margin-top: 20px; /* Oberer Abstand hinzufügen */
 }
 
-.head{
+/* Stil für den Text "The head behind" */
+.head {
   text-align: center;
-  font-size:38px;
-  font-variant: initial;
+  font-size: 38px;
+  font-weight: bold; /* Fett hervorheben */
+  margin-bottom: 20px; /* Unteren Abstand hinzufügen */
 }
 
+/* Stil für das Profilbild */
 .profile {
-  display: block;
   text-align: center;
-  align-items: center; /* Vertikal zentrieren */
-  margin-bottom: 10px; /* Einen Abstand unter dem Bild hinzufügen */
-  height:50;
+  margin-bottom: 20px; /* Unteren Abstand hinzufügen */
 }
 
-.me img {
-  height: 100px;
-  width: 100%;
-  position: absolute;
-  justify-content: center;
+.profile img {
+  width: 350px; /* Breite des Profilbildes festlegen */
+  height: auto; /* Automatische Höhe beibehalten */
+  border-radius: 50%; /* Kreisförmiges Profilbild */
 }
 
-/* CSS-Stile für den Text */
+/* Stil für den Abschnitt "About Me Text" */
 .about-me-text {
-  width: 500px; /* Die Breite des Textbereichs festlegen */
-  padding: 10px 100px;
+  text-align: justify; /* Text im Blocksatz ausrichten */
   font-size: 18px;
-  left: 50px;
-  margin: 0 auto;
+  padding: 0 20px; /* Innenabstand links und rechts hinzufügen */
 }
 
-.left-align {
-  text-align: left; /* Text linksbündig ausrichten */
-}
-
-.about-me-specific-text {
-  width: 1000px; /* Die Breite des Textbereichs festlegen */
-  padding: 10px;
+/* Stil für den Abschnitt "About Me Specific Text" */
+.about-me-specific-text, .more-details {
+  text-align: justify; /* Text im Blocksatz ausrichten */
   font-size: 18px;
-  left: 50px;
-  margin: 0 auto;
+  padding: 0 20px; /* Innenabstand links und rechts hinzufügen */
 }
-
-.more-details {
-  width: 1000px; /* Die Breite des Textbereichs festlegen */
-  padding: 0px;
-  font-size: 18px;
-  left: 50px;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  /* CSS für kleinere Bildschirme */
-  .profile {
-    flex-direction: column; /* Das Bild wird auf kleinere Bildschirme gestapelt */
-    align-items: flex-start; /* Das Bild wird am Anfang des Texts ausgerichtet */
-  }
-
-  .about-me-text {
-    width: 100%; /* Den Textbereich auf volle Breite setzen */
-  }
-}
-.mein-weg {
-text-align: center;
-}
-
-.schritt {
-  text-align: center;
-}
-
-.entdeckungsreise {
-  text-align: center;
-}
-
-.genuss{
-  text-align: center;
-}
-
-.einladung {
-  text-align: center;
-}
-
 .gemeinsam {
   text-align: center;
-  font-size: 25px;
+  padding-top: 50px;
+  font-size: 20px;
+}
+/* Stil für den Abschnitt "More Details" */
+.more-details {
+  margin-bottom: 20px; /* Unteren Abstand hinzufügen */
 }
 
+/* Stil für den Follow-Me-Text */
 .follow-me {
-text-align: center;
-font-size: 20;
-font-weight: bold; 
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px; /* Oberen Abstand hinzufügen */
+  margin-bottom: 20px; /* Unteren Abstand hinzufügen */
 }
 
-/* Formatierung Social Media Icons About me-Seite */
-/* CSS für den Container */
+/* Stil für den Container der Social-Media-Icons */
 .socialmediaaboutme {
-  display: flex; /* Flexbox verwenden */
-  justify-content: center; /* Bilder zentriert ausrichten */
-  flex-wrap: wrap; /* Bei Bedarf umbrechen */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Unteren Abstand hinzufügen */
 }
 
+/* Stil für die Social-Media-Icons */
 .socialmediaaboutme img {
-  width: 50px; /* Breite des Icons */
-  height: 50px; /* Höhe des Icons */
-  margin: 5px; /* Abstand zwischen den Icons */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Übergangseffekte für Transformation und Opazität */
+  width: 50px;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* CSS für die Hover-Effekte */
+/* Stil für die Hover-Effekte der Social-Media-Icons */
 .socialmediaaboutme img:hover {
-  transform: scale(1.2); /* Vergrößern des Icons beim Hovern */
-  opacity: 0.7; /* Reduzieren der Opazität beim Hovern */
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+/* Media Query für kleinere Bildschirme */
+@media screen and (max-width: 779px) {
+  body {
+    text-align: center; /* Text zentrieren */
+  }
+
+  header {
+    text-align: center; /* Header-Inhalt zentrieren */
+  }
+
+  nav ul {
+    padding: 0; /* Listenpadding entfernen */
+    list-style-type: none; /* Listenpunkte entfernen */
+  }
+
+  .profile img {
+    width: 80%; /* Breite des Profilbildes anpassen */
+  }
+
+  .about-me-text, .about-me-specific-text, .more-details {
+    width: 100%; /* Textbereich auf volle Breite setzen */
+  }
+
+  .socialmediaaboutme img {
+    width: 40px; /* Größe der Social-Media-Icons anpassen */
+    height: auto;
+    margin: 0 5px; /* Horizontalen Abstand zwischen den Icons verringern */
+  }
 }
