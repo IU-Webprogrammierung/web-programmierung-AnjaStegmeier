@@ -117,11 +117,32 @@ footer p {
   margin-top: 20px;
   margin-bottom:30px;
 }
-.details footer{
-  text-align: right;
+
+/* Stile für die Liste im Footer */
+
+/* Stile für die Liste im Footer */
+.details.footer ul {
+  display: flex; /* Listenpunkte nebeneinander anordnen */
+  justify-content: center; /* Liste zentriert ausrichten */
+  flex-wrap: wrap; /* Bei Bedarf umbrechen */
 }
+
+.details.footer ul li {
+  margin: 10px; /* Abstand zwischen den Listenpunkten */
+}
+
+/* Media Query für kleinere Bildschirmgrößen */
+@media screen and (max-width: 768px) {
+  .details.footer ul {
+    flex-direction: column; /* Listenpunkte untereinander anordnen */
+    align-items: center; /* Liste zentriert ausrichten */
+  }
+}
+
+
 .copy {
   text-align:center;
+  padding-bottom: 30px;
   margin-top: 10px;
   margin-bottom: 25px;
 
