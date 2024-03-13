@@ -33,7 +33,7 @@ header {
 .social-media img:hover {
   opacity: 0.8; /* Ändere die Opazität des Icons beim Hover-Effekt */
 }
-.headline {
+.h1 {
   align: center;
   width: 100%;
   letter-spacing: 20px;
