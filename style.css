@@ -349,6 +349,10 @@ footer p {
   padding-top: 10px;
   font-size: larger;
 }
+.Teigbearbeitung {
+  padding-top: 20px;
+  padding-left: 80px;
+}
 /* Inhaltformatierung Weeklyseite */
 .weekly-highlight {
  align-items: center;
