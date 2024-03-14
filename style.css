@@ -381,7 +381,9 @@ margin-bottom: 20px;
 .weekly-highlight {
  align-items: center;
 }
-
+.Inhalttext {
+  padding-left: 80px;
+}
 .mealprep img {
   width: 100%;
   max-height: 300px;
@@ -414,6 +416,7 @@ margin-bottom: 20px;
 .Schlusssatz {
   margin-top: 40px;
 }
+
 /* Inhaltformatierung Lifestyleseite */
 
 .beautyposts {

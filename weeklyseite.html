@@ -5,56 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vegan Dream</title>
   <link rel="stylesheet" href="style.css">
-  
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
   <header>
-     <h1>Vegan Dream</h1>
-       <!-- Seitenübersicht/Menü -->
-       <div class="menü-container">
-        <!-- Hamburger Menü für kleinere Bildschirme (nur Botton) -->
-      <button class="hamburger-menu-icon" onclick="toggleMenu()">&#9776;</button>
+    <h1>Vegan Dream</h1>
+    <!-- Seitenübersicht/Menü -->
+    <div class="menü-container">
+    <!-- Hamburger Menü für kleinere Bildschirme (nur Botton) -->
+    <button class="hamburger-menu-icon" onclick="toggleMenu()">&#9776;</button>
     </div>
     <nav class="menue">
-      <ul>
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="rezepte.html">Rezepte</a></li>
-        <li><a href="weeklyseite.html">Weekly Highlight</a></li>
-        <li><a href="lifestyle.html">Lifestyle</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-      </ul>
+    <ul>
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="rezepte.html">Rezepte</a></li>
+    <li><a href="weeklyseite.html">Weekly Highlight</a></li>
+    <li><a href="lifestyle.html">Lifestyle</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    </ul>
     </nav>
-  <div class="social-media">
+    <div class="social-media">
     <a href="LINK_ZU_DEINEM_INSTAGRAM_PROFIL"><img src="Veganer Foodblog/social media icons/instagram.png" alt="Instagram"></a>
     <a href="LINK_ZU_DEINEM_PINTEREST_PROFIL"><img src="Veganer Foodblog/social media icons/facebook (1).png" alt="Facebook"></a>
     <a href="LINK_ZU_DEINEM_YOUTUBE_PROFIL"><img src="Veganer Foodblog/social media icons/pinterest.png" alt="pinterest"></a>
     <a href="LINK_ZU_DEINEM_TIKTOK_PROFIL"><img src="Veganer Foodblog/social media icons/youtube.png" alt="Youtube"></a>
     <a href="LINK_ZU_DEINEM_YOUTUBE_PROFIL"><img src="Veganer Foodblog/social media icons/tiktok.png" alt="Tiktok"></a>
-  </div>
+    </div>
+
 <!-- Suchleiste -->
     <div class="search-bar">
-      <input type="text" placeholder="Suche...">
-      <button type="submit">Suchen</button>
+    <input type="text" placeholder="Suche...">
+    <button type="submit">Suchen</button>
     </div>
   </header>
    
     
-        <section>
-         <h2 class="weekly-highlight">Thema und Rezepte der Woche</h2>
-        <div class="mealprep">
-         <img src="Veganer Foodblog/weekly Seite/ella-olsson-P4jRJYN33wE-unsplash.jpg" alt="mealprep">
-          </div>
-          <!-- Hier kommt das wöchentliche Highlight -->
-          <main>
-          <article>
+    <section>
+    <h2 class="weekly-highlight">Thema und Rezepte der Woche</h2>
+    <div class="mealprep">
+     <img src="Veganer Foodblog/weekly Seite/ella-olsson-P4jRJYN33wE-unsplash.jpg" alt="mealprep">
+    </div>
+          
+    <!-- Hier kommt das wöchentliche Highlight -->
+      
+          <article class="Inhalttext">
             <h3>Vegan Meal Prep: Die genussvolle Abkürzung zum gesunden Leben</h3>
             <p> Keine Zeit, aber Lust auf gesunde und leckere vegane Mahlzeiten? Meal Prep ist die Lösung! Mit ein bisschen Planung und Vorbereitung zauberst du im Handumdrehen köstliche Gerichte, die dich fit und glücklich machen.Hier kommt die erste Folge von einer 5-teiligen Reihe für leckere Meal Prep Ideen.</p>
             
             <h4 class="Titel-Vorteile">Vorteile von veganem Meal Prep:</h4>
             <div class="Vorteile">
-              <ul>
+            <ul>
               <li>Gesunde Ernährung leicht gemacht: Mit Meal Prep hast du immer gesunde und nahrhafte Mahlzeiten parat, und ungesunde Snacks oder Fast Food werden zur Nebensache.</li>
               <li>Zeit sparen: Vorkochen am Wochenende oder Abend spart Zeit in der stressigen Woche. So genießt du gesunde Mahlzeiten, ohne stundenlang in der Küche stehen zu müssen.</li>
               <li>Geldbeutel schonen: Meal Prep hilft dir, bewusster einzukaufen und Lebensmittelverschwendung zu vermeiden. So sparst du bares Geld.</li>
@@ -66,9 +67,9 @@
 
             <h5>Hauptgerichte:</h5>
             <ul>
-              <li>Gemüsereiche Currys mit Reis oder Quinoa</li>
-              <a href="(/* Hier wäre der Link um auf weitere Seiten zu leiten */)"> <li>Vegane Pasta-Gerichte</li></a> 
-              <li>Gefüllte Süßkartoffeln</li>
+             <li>Gemüsereiche Currys mit Reis oder Quinoa</li>
+             <a href="(/* Hier wäre der Link um auf weitere Seiten zu leiten */)"> <li>Vegane Pasta-Gerichte</li></a> 
+             <li>Gefüllte Süßkartoffeln</li>
             </ul>
             <h5>Salate:</h5>
             <ul>
@@ -102,20 +103,22 @@
             
           </article>
         </section>
-      </main>
+    
       <div class="mealprep2">
         <img src="Veganer Foodblog/weekly Seite/ella-olsson-P4jRJYN33wE-unsplash.jpg" alt="mealprep2">
          </div>
+
+
   <footer>
-        <!-- Newsletterabonnementleiste -->
+    <!-- Newsletterabonnementleiste -->
     <div class="newsletter">
       <p>Newsletter Subscription</p>
       <form id="newsletter-form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Subscribe</button>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Subscribe</button>
       </form>
-      </div>
+    </div>
       <!-- Details für einen vollständgien & real wirkenden Footer -->
      <div class="copy">
         <p>&copy; 2024 Vegan Dream</p>
@@ -131,7 +134,7 @@
       </div>
       
  <!-- To top Button -->
-        <button id="to-top-btn"><img src="Veganer Foodblog/Pfeil.png" alt="To Top"></button>
+  <button id="to-top-btn"><img src="Veganer Foodblog/Pfeil.png" alt="To Top"></button>
   </footer>
 
   <script src="script.js"></script>
