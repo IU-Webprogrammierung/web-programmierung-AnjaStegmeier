@@ -49,7 +49,7 @@ nav ul li {
   font-size: 22px;
 }
 /* Standard-Menü für größere Bildschirme */
-.menü {
+.menue {
   display: block;
 }
 
@@ -60,7 +60,7 @@ nav ul li {
 
 @media screen and (max-width: 760px) {
   /* Das Standard-Menü ausblenden */
-  .menü {
+  .menue {
     display: none;
   }
   
@@ -347,6 +347,9 @@ margin-top:30px;
 margin-bottom: 20px;
 }
 
+.Tipps {
+  margin-top: 50px;
+}
 .Anleitung-container {
   display: flex;
   justify-content: center;
