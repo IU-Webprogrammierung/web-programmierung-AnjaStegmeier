@@ -272,6 +272,7 @@ footer p {
     margin-bottom: 0; /* Bei größeren Bildschirmen keinen Abstand zum Footer haben */
   }
 }
+
 /* Inhaltformatierung Rezepte-Seite */
 .bodyrezepte {
   background-color: #f2f2f2;
@@ -287,12 +288,6 @@ footer p {
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
-}
-
-.category a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
 }
 
 .min-gericht,
