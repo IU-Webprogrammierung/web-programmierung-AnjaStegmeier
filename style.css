@@ -393,7 +393,27 @@ margin-bottom: 20px;
   max-height: 500px;
   object-fit: cover;
 }
+.Titel-Vorteile {
+  margin-top: 30px;
+}
+.Vorteile {
+  margin-top:30px;
+  margin-bottom: 40px;
+}
 
+.Titel-Hilfreiche-Tipps {
+  margin-top:30px;
+  margin-bottom: 20px;
+}
+
+.Hilfreiche-Tipps {
+  margin-top:20px; 
+  margin-bottom: 40px;
+}
+
+.Schlusssatz {
+  margin-top: 40px;
+}
 /* Inhaltformatierung Lifestyleseite */
 
 .beautyposts {
@@ -480,9 +500,10 @@ section h2 {
 
 /* Stil für den Abschnitt "About Me Text" */
 .about-me-text {
-  text-align: justify; /* Text im Blocksatz ausrichten */
+  text-align: center; /* Text im Blocksatz ausrichten */
   font-size: 18px;
   padding: 0 20px; /* Innenabstand links und rechts hinzufügen */
+  margin-bottom:80px;
 }
 
 /* Stil für den Abschnitt "About Me Specific Text" */
