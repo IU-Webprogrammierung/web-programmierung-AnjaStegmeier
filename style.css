@@ -326,6 +326,27 @@ footer p {
   margin-top: 100px;
 }
 
+.Schritt1,
+.Schritt2,
+.Schritt3,
+.Schritt4,
+.Schritt5,
+.Schritt6, 
+.Schritt7,
+.Schritt8,
+.Schritt9,
+.Schritt10,
+.Schritt11,
+.Schritt12,
+.Schritt13,
+.Schritt14,
+.Schritt15,
+.Schritt16,
+.Schritt17 {
+margin-top:30px;
+margin-bottom: 20px;
+}
+
 .Anleitung-container {
   display: flex;
   justify-content: center;
@@ -350,7 +371,7 @@ footer p {
   font-size: larger;
 }
 .Teigbearbeitung {
-  padding-top: 20px;
+  margin-top: 40px;
   padding-left: 80px;
 }
 /* Inhaltformatierung Weeklyseite */
