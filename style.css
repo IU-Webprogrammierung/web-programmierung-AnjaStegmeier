@@ -470,7 +470,7 @@ body {
 }
 
 /* Stil für h2-Überschriften */
-section h2 {
+.title-aboutme {
   text-align: center;
   font-size: 40px;
   margin-top: 20px; /* Oberer Abstand hinzufügen */
@@ -481,7 +481,7 @@ section h2 {
   text-align: center;
   font-size: 38px;
   font-weight: bold; /* Fett hervorheben */
-  margin-bottom: 20px; /* Unteren Abstand hinzufügen */
+  margin-bottom: 20px; /* Unterer Abstand  */
 }
 
 /* Stil für das Profilbild */
@@ -500,20 +500,25 @@ section h2 {
 .about-me-text {
   text-align: center; /* Text im Blocksatz ausrichten */
   font-size: 18px;
-  padding: 0 20px; /* Innenabstand links und rechts hinzufügen */
   margin-bottom:80px;
+  margin-top: 50px;
 }
 
 /* Stil für den Abschnitt "About Me Specific Text" */
-.about-me-specific-text, .more-details {
+.about-me-specific-text, 
+.more-details {
   text-align: justify; /* Text im Blocksatz ausrichten */
   font-size: 18px;
   padding: 0 20px; /* Innenabstand links und rechts hinzufügen */
+  margin-top: 80px;
+  padding-right: 50px;
+  padding-left: 60px;
 }
 .gemeinsam {
   text-align: center;
-  padding-top: 50px;
+  margin-top: 80px;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 /* Stil für den Abschnitt "More Details" */
 .more-details {
