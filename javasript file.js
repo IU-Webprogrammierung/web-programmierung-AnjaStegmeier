@@ -32,8 +32,14 @@ function showSlides() {
 }
 
 // Scroll to top functionality
-document.getElementById("to-top-btn").addEventListener("click", function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+document.addEventListener("DOMContentLoaded", function() {
+  var toTopButton = document.getElementById("to-top-btn");
+
+  // Event Listener für den Klick auf den Button hinzufügen
+  toTopButton.addEventListener("click", function() {
+      // Zurück zum Seitenanfang scrollen
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });
 
 // Funktion Hamburger Menü
