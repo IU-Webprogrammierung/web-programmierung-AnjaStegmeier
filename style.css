@@ -138,7 +138,6 @@ footer {
   background-color: #57a450;
 }
 
-/* CSS für den Container */
 /* CSS für die Social-Media-Icons */
 /* Allgemeine Stile für Social Media Icons */
 
@@ -146,6 +145,7 @@ footer {
 /* Stil für den Social-Media-Bereich */
 .social-media {
   margin-top: 20px; /* Abstand zwischen dem Newsletter und den Social-Media-Icons */
+  text-align: center;
 }
 .social-media a {
   display: inline-block; /* Inline-Block-Elemente */
@@ -154,7 +154,6 @@ footer {
 
 .social-media img {
   width: 30px; /* Größe der Social-Media-Icons */
-  margin: 0 5px; /* Abstand zwischen den Icons */
 }
 /* CSS für die Hover-Effekte */
 .social-media img:hover {

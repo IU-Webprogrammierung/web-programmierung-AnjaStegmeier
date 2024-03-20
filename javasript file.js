@@ -16,32 +16,15 @@ document.getElementById("newsletter-form").addEventListener("submit", function(e
   this.reset(); // Reset form fields
 });
 
-// Slider functionality
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let slides = document.getElementsByClassName("slide");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 
 // Scroll to top functionality
-document.addEventListener("DOMContentLoaded", function() {
-  var toTopButton = document.getElementById("to-top-btn");
-
-  // Event Listener für den Klick auf den Button hinzufügen
-  toTopButton.addEventListener("click", function() {
-      // Zurück zum Seitenanfang scrollen
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+document.getElementById("to-top-btn").addEventListener("click", function() {
+  // Zum Anfang der Seite scrollen
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
 });
-
 // Funktion Hamburger Menü
 function toggleMenu() {
   var menü = document.querySelector('.menü');
