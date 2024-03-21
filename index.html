@@ -55,29 +55,41 @@
     <h3>Latest Posts</h3>
 </div>
 
-    <section id="latest-posts">
-    
-      <div class="pic">
-        <img src="Veganer Foodblog/Bilder/cherries.jpg" alt="cherries" style="width:100%">
-        <h4>Cherries, interrupted</h4>
-        <p>Ich zeige euch das Rezept für die beste Cherry Jam ohne Zucker und Gelantine.</p>
-        <p>What else do you want?</p>
+<section id="latest-posts">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Veganer Foodblog/Bilder/cherries.jpg" class="d-block w-100 h-auto" alt="cherries">
+        <div class="carousel-caption bg-dark p-3">
+          <h5 class="text-white">Cherries, interrupted</h5>
+          <p class="text-white">Ich zeige euch das Rezept für die beste Cherry Jam ohne Zucker und Gelantine.</p>
+        </div>
       </div>
-  
-      
-      <div class="pic2">
-        <a href="Rezept vegane Croissants.html"><img src="Veganer Foodblog/Bilder/croissants.jpg" alt="croissant" style="width:100%"></a>
-        <a href="Rezept vegane Croissants.html"><h4>Le French</h4></a>
-        <p>Wie du die besten veganen Croissants selber machst.</p>
+      <div class="carousel-item">
+        <img src="Veganer Foodblog/Bilder/croissants.jpg" class="d-block w-100 h-auto" alt="croissant">
+        <div class="carousel-caption bg-dark p-3">
+          <h5 class="text-white">Le French</h5>
+          <p class="text-white">Wie du die besten veganen Croissants selber machst.</p>
+        </div>
       </div>
-  
-      <div class="greens">
-        <img src="Veganer Foodblog/Bilder/greens.jpg" alt="greens" style="width:100%">
-        <h4>5 Gründe vegan zu leben</h4>
-        <p>In meinem neuen Lifestyle Artikel gebe ich dir die wichtigsten Gründe.</p>
+      <div class="carousel-item">
+        <img src="Veganer Foodblog/Bilder/greens.jpg" class="d-block w-100 h-auto" alt="greens">
+        <div class="carousel-caption bg-dark p-3">
+          <h5 class="text-white">5 Gründe vegan zu leben</h5>
+          <p class="text-white">In meinem neuen Lifestyle Artikel gebe ich dir die wichtigsten Gründe.</p>
+        </div>
       </div>
-     
-    </section>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
     </main>
 
   <footer>
