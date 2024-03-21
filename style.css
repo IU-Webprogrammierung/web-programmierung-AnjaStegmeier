@@ -10,10 +10,6 @@ header {
   background-color: #99c175;
   color: #363535;
   text-align: center;
-  font-family: "papyrus";
-  font-size: larger;
-  font-style: initial;
-  font-stretch: extra-expanded;
   padding: 10px 20px;
 }
 
@@ -28,10 +24,11 @@ nav ul {
 }
 nav ul li {
   display: inline;
-  margin-right: 30px;
-  margin-left:30px;
-  font-size: 22px;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 18px;
 }
+
 /* Hovereffekte für die Menükategorien */
 nav ul li a {
   color: #363535; /* Standardfarbe auf Weiß setzen */
@@ -62,9 +59,10 @@ nav ul li a:hover {
 
 .search-bar {
   text-align: right;
-  margin-top: 30px;
-  margin-bottom:30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 
 /* Weitere Styles */
 
@@ -73,24 +71,22 @@ main {
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 footer {
   background-color: #99c175;
   color: #fff;
   padding: 10px 0;
-  margin-top: 450px;
 }
 
 .newsletter {
   font-size: 16px;
   text-align: left;
   margin-top: 20px;
-  margin-bottom:30px;
+  margin-bottom: 20px;
   padding-left: 20px;
 }
-
 
 /* Stile für die Liste im Footer */
 .details.footer ul {
@@ -113,10 +109,10 @@ footer {
 
 
 .copy {
-  text-align:center;
-  padding-bottom: 30px;
+  text-align: center;
+  padding-bottom: 20px;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 #to-top-btn {
@@ -137,10 +133,6 @@ footer {
 #to-top-btn:hover {
   background-color: #57a450;
 }
-
-/* CSS für die Social-Media-Icons */
-/* Allgemeine Stile für Social Media Icons */
-
 
 /* Stil für den Social-Media-Bereich */
 .social-media {
@@ -180,61 +172,48 @@ footer {
 
 .title {
   text-align: center;
-  margin-top: 40px;
-  padding-left: 120px;
-  padding-right: 120px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .latest {
-  margin-top: 110px;
-  font-size: 18px;
-  padding-left: 40px;
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: center;
 }
+/* Media Query für kleinere Bildschirmgrößen */
 @media screen and (min-width: 768px) {
   .latest {
-    margin-bottom: 0; /* Bei größeren Bildschirmen keinen Abstand zum Footer haben */
+    margin-bottom: 0px;
   }
 }
 
 .latest-posts {
-  margin-bottom: 50px; /* Füge einen Abstand zum Footer hinzu */
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .latest-posts {
-    margin-bottom: 0; /* Bei größeren Bildschirmen keinen Abstand zum Footer haben */
+    margin-bottom: 150px; 
   }
 }
-
-.pic, .pic2, .greens {
-  float: left;
-  width: calc(25% - 80px); /* Breite auf 25% minus 80px (40px links und 40px rechts) setzen */
-  flex: 1 1 auto;
-  margin: 0 2% 2% 0;
-  position: relative;
-  z-index: 0;
-  padding: 0 40px; /* Ändert den linken und rechten Padding-Wert auf 40px */
-}
-
+/* Anpassung für kleinere Bildschirme */
 @media screen and (max-width: 768px) {
   .pic,
   .pic2,
   .greens {
-    width: 100%; /* Ändert die Breite auf 100% bei Bildschirmen kleiner als 768px */
-    margin-right: 0;
-    padding: 0; /* Entfernt das Padding für kleinere Bildschirme */
-  }
-
-  .latest-posts {
-    margin-bottom: 20px; /* Füge einen Abstand zum Footer hinzu */
+    width: 100%;
+    padding-top: 50%;
   }
 }
 
-.pic img, .pic2 img, .greens img {
+.pic img,
+.pic2 img,
+.greens img {
   width: 100%;
-  height: 200px; 
+  height: 100%;
   object-fit: cover;
 }
-
 
 
 /* Inhaltformatierung Rezepte-Seite */
@@ -254,16 +233,7 @@ footer {
   text-align: center;
 }
 
-.min-gericht,
-.asia,
-.bowl,
-.frühstücksideen,
-.soup,
-.sweets,
-.pasta,
-.dip,
-.ofen,
-.durstlöscher {
+.category img {
   height: 230px;
   width: 150px;
 }
@@ -277,7 +247,6 @@ footer {
   border-radius: 10px;
   cursor: pointer;
 }
-
 
 /* Inhaltformatierung Croissant Rezept */
 
@@ -303,8 +272,8 @@ footer {
 .Schritt15,
 .Schritt16,
 .Schritt17 {
-margin-top:30px;
-margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .Tipps {
@@ -379,8 +348,22 @@ margin-bottom: 20px;
 }
 
 /* Inhaltformatierung Lifestyleseite */
+/* Anpassung der Beauty-Posts für kleinere Bildschirme */
+.beautyposts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
 
-.thumbnail {
+.beauty-item {
+  flex: 1;
+  max-width: calc(50% - 20px);
+  padding: 10px;
+}
+/* Hinzufügen einer gemeinsamen Klasse für alle Thumbnails */
+.thumbnail,
+.thumbnail1,
+.thumbnail2 {
   position: relative;
   width: 100%;
   padding-top: 65%; /* 16:9 Seitenverhältnis für das Platzhalterbild */
@@ -390,6 +373,7 @@ margin-bottom: 20px;
   overflow: hidden; /* Damit die Überschrift innerhalb des Bildes bleibt */
 }
 
+/* Anpassung der Beauty-Posts */
 .beautyposts {
   display: flex;
   flex-wrap: wrap;
@@ -401,29 +385,26 @@ margin-bottom: 20px;
   padding: 10px;
 }
 
-.thumbnail-container {
+/* Anpassung der Thumbnail-Container */
+.thumbnail-container,
+.thumbnails-container {
   margin-top: 20px; /* oberer Abstand */
   margin-bottom: 20px; /* unterer Abstand */
 }
 
+/* Anpassung der Thumbnail-Items */
 .thumbnails-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; /* Bei Bedarf umbrechen */
   margin-bottom: -20px; /* Verringert den Abstand zum Footer */
 }
-
 .thumbnail-item {
   flex: 0 0 calc(50% - 20px); /* Jedes Thumbnail soll 50% der Breite des Containers einnehmen und einen Abstand von 20px haben */
   margin-bottom: 20px;
   margin-right: 20px; /* Zusätzlicher horizontaler Abstand zwischen den Thumbnails */
 }
 
-/* Optionales Grid-Layout für Kategorien */
-
-
-
-/* Zentrierung aller Inhalte auf der About Me-Seite */
 
 /* Zentrierung der Seitenüberschrift "About Me" */
 /* Allgemeine Stile */

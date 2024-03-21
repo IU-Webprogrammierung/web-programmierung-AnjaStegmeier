@@ -30,3 +30,11 @@ function toggleMenu() {
   var menü = document.querySelector('.menü');
   menü.classList.toggle('show');
 }
+function toggleMenu() {
+  var menu = document.querySelector('.menue');
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+  }
+}
