@@ -29,60 +29,128 @@
       <button type="submit">Suchen</button>
     </div>
   </header>
-  
-  <main class="bodyrezepte category-grid">
+  <main class="bodyrezepte container">
     <!-- Rezeptkategorien -->
-    <div class="category">
-      <img class="min-gericht" src="Veganer Foodblog/Bilder/alex-lvrs-0ly_-joW_7Q-unsplash.jpg" alt="Miunten Gerichte">
-      <h3>15 Minuten Gerichte</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <a href="link_zu_deiner_seite.html">
+            <img class="card-img-top" src="Veganer Foodblog/Bilder/alex-lvrs-0ly_-joW_7Q-unsplash.jpg" alt="Miunten Gerichte">
+            <div class="card-body">
+              <h3 class="card-title">15 Minuten Gerichte</h3>
+            </div>
+          </a>
+          <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <a href="link_zu_deiner_seite.html">
+            <img class="card-img-top" src="Veganer Foodblog/Bilder/max-griss-4xja8zTvAB0-unsplash.jpg" alt="Asiatisch">
+            <div class="card-body">
+              <h3 class="card-title">Asiatisch</h3>
+            </div>
+          </a>
+          <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+        </div>
+      </div>
+     <!-- Bowls -->
+     <div class="col">
+      <div class="card h-100">
+        <a href="link_zu_deiner_seite.html">
+          <img class="card-img-top" src="Veganer Foodblog/Bilder/jo-sonn-M-tzZD5z720-unsplash.jpg" alt="Bowls">
+          <div class="card-body">
+            <h3 class="card-title">Bowls</h3>
+          </div>
+        </a>
+        <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+      </div>
     </div>
-    <div class="category">
-      <img class="asia" src="Veganer Foodblog/Bilder/max-griss-4xja8zTvAB0-unsplash.jpg" alt="Kategorie 2">
-      <h3>Asiatisch</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
+
+    <!-- Frühstücksideen -->
+    <div class="col">
+      <div class="card h-100">
+        <a href="link_zu_deiner_seite.html">
+          <img class="card-img-top" src="Veganer Foodblog/Bilder/frühstücksbowl2.jpg" alt="Frühstücksideen">
+          <div class="card-body">
+            <h3 class="card-title">Frühstücksideen</h3>
+          </div>
+        </a>
+        <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+      </div>
     </div>
-    <div class="category">
-      <img class="bowl" src="Veganer Foodblog/Bilder/jo-sonn-M-tzZD5z720-unsplash.jpg" alt="Kategorie 3">
-      <h3>Bowls</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
+
+    <!-- Süßes -->
+    <div class="col">
+      <div class="card h-100">
+        <a href="link_zu_deiner_seite.html">
+          <img class="card-img-top" src="Veganer Foodblog/Bilder/brigitta-baranyi-_nHo1HRDEZM-unsplash.jpg" alt="Süßes">
+          <div class="card-body">
+            <h3 class="card-title">Süßes</h3>
+          </div>
+        </a>
+        <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+      </div>
     </div>
-    <div class="category">
-      <img class="frühstücksideen" src="Veganer Foodblog/Bilder/frühstücksbowl2.jpg" alt="Kategorie 4">
-      <h3>Frühstücksideen</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
+     <!-- Pasta -->
+     <div class="col">
+      <div class="card h-100">
+        <a href="link_zu_deiner_seite.html">
+          <img class="card-img-top" src="Veganer Foodblog/Bilder/pasta1.jpg" alt="Pasta">
+          <div class="card-body">
+            <h3 class="card-title">Pasta</h3>
+          </div>
+        </a>
+        <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+      </div>
     </div>
-    <div class="category">
-      <img class="sweets" src="Veganer Foodblog/Bilder/brigitta-baranyi-_nHo1HRDEZM-unsplash.jpg" alt="Kategorie 5">
-      <h3>Süßes</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
-    </div>
-    <div class="category">
-      <img class="pasta" src="Veganer Foodblog/Bilder/pasta1.jpg" alt="Kategorie 6">
-      <h3>Pasta</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
-    </div>
-    <div class="category">
-      <img class="dip" src="Veganer Foodblog/Bilder/dip.jpg" alt="Kategorie 7">
-      <h3>Dips & Saucen</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
-    </div>
-    <div class="category">
-      <img class="ofen" src="Veganer Foodblog/Bilder/stefan-johnson-mCTatdD2fmk-unsplash.jpg" alt="Kategorie 8">
-      <h3>Aus dem Ofen</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
-    </div>
-    <div class="category">
-      <img class="durstlöscher" src="Veganer Foodblog/Bilder/food-photographer-jennifer-pallian-sSnCZlEWN5E-unsplash.jpg" alt="Kategorie 9">
-      <h3>Durstlöscher</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
-    </div>
-    <div class="category">
-      <img class="soup" src="Veganer Foodblog/Bilder/julia-kicova-K-JgWmP_82k-unsplash.jpg" alt="Kategorie 10">
-      <h3>Suppen & Eintöpfe</h3>
-      <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)">Zeige mehr</button>
-    </div>
-  </main>
+        <div class="col">
+          <div class="card">
+            <a href="link_zu_deiner_seite.html">
+              <img class="card-img-top" src="Veganer Foodblog/Bilder/dip.jpg" alt="Dips & Saucen">
+              <div class="card-body">
+                <h3 class="card-title">Dips & Saucen</h3>
+              </div>
+            </a>
+            <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="link_zu_deiner_seite.html">
+              <img class="card-img-top" src="Veganer Foodblog/Bilder/stefan-johnson-mCTatdD2fmk-unsplash.jpg" alt="Aus dem Ofen">
+              <div class="card-body">
+                <h3 class="card-title">Aus dem Ofen</h3>
+              </div>
+            </a>
+            <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="link_zu_deiner_seite.html">
+              <img class="card-img-top" src="Veganer Foodblog/Bilder/food-photographer-jennifer-pallian-sSnCZlEWN5E-unsplash.jpg" alt="Durstlöscher">
+              <div class="card-body">
+                <h3 class="card-title">Durstlöscher</h3>
+              </div>
+            </a>
+            <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="link_zu_deiner_seite.html">
+              <img class="card-img-top" src="Veganer Foodblog/Bilder/julia-kicova-K-JgWmP_82k-unsplash.jpg" alt="Suppen & Eintöpfe">
+              <div class="card-body">
+                <h3 class="card-title">Suppen & Eintöpfe</h3>
+              </div>
+            </a>
+            <button onclick="Mehr(/* Hier wäre der Link um auf weitere Seiten zu leiten */)" class="btn btn-primary">Zeige mehr</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    </main>
 
   <footer>
     <!-- Newsletterabonnementleiste -->
