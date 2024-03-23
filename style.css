@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #99c175;
+  background-color: #191c25;
   color: #363535;
   text-align: center;
   padding: 10px 20px;
@@ -352,64 +352,42 @@ footer {
 }
 
 /* Inhaltformatierung Lifestyleseite */
-/* Anpassung der Beauty-Posts für kleinere Bildschirme */
-.beautyposts {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-}
-
-.beauty-item {
-  flex: 1;
-  max-width: calc(50% - 20px);
-  padding: 10px;
-}
-/* Hinzufügen einer gemeinsamen Klasse für alle Thumbnails */
-.thumbnail,
-.thumbnail1,
-.thumbnail2 {
-  position: relative;
-  width: 100%;
-  padding-top: 65%; /* 16:9 Seitenverhältnis für das Platzhalterbild */
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  overflow: hidden; /* Damit die Überschrift innerhalb des Bildes bleibt */
-}
-
-/* Anpassung der Beauty-Posts */
-.beautyposts {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px; /* Negative Außenabstände, um den Abstand zwischen den Elementen auszugleichen */
-}
-.beauty-item {
-  flex: 1;
-  max-width: calc(50% - 20px); /* Jedes Element nimmt maximal 50% der Breite des Elternelements ein und berücksichtigt den Abstand */
-  padding: 10px;
-}
-
 /* Anpassung der Thumbnail-Container */
-.thumbnail-container,
-.thumbnails-container {
+.thumbnail-container {
   margin-top: 20px; /* oberer Abstand */
   margin-bottom: 20px; /* unterer Abstand */
 }
 
-/* Anpassung der Thumbnail-Items */
-.thumbnails-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; /* Bei Bedarf umbrechen */
-  margin-bottom: -20px; /* Verringert den Abstand zum Footer */
-}
-.thumbnail-item {
-  flex: 0 0 calc(50% - 20px); /* Jedes Thumbnail soll 50% der Breite des Containers einnehmen und einen Abstand von 20px haben */
-  margin-bottom: 20px;
-  margin-right: 20px; /* Zusätzlicher horizontaler Abstand zwischen den Thumbnails */
+/* Anpassung der Thumbnail-Container */
+.thumbnail-container {
+  margin-top: 20px; /* oberer Abstand */
+  margin-bottom: 20px; /* unterer Abstand */
 }
 
+/* Anpassung der Thumbnail */
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden; /* Damit die Überschrift innerhalb des Bildes bleibt */
+}
 
+/* Anpassung der Thumbnail-Titel */
+.thumbnail-title {
+  font-size: 18px; /* Ändern Sie die Schriftgröße nach Bedarf */
+}
+
+    /* Stil für die Hover-Vergrößerung der Bilder */
+    .thumbnail-container:hover .thumbnail,
+    .thumbnail-container:hover h3.thumbnail-title {
+      transform: scale(1.1);
+      transition: transform 0.5s ease;
+    }
+    /* Stil für die Bilderunterschrift */
+    .thumbnail-title {
+      transition: transform 0.5s ease;
+    }
 /* Zentrierung der Seitenüberschrift "About Me" */
 /* Allgemeine Stile */
 body {
@@ -447,12 +425,13 @@ body {
 .about-me-text {
   text-align: center; /* Text im Blocksatz ausrichten */
   font-size: 18px;
-  margin-bottom:80px;
+  margin-bottom: 80px;
   margin-top: 50px;
+  color: white; /* Textfarbe auf Weiß ändern */
 }
 
 /* Stil für den Abschnitt "About Me Specific Text" */
-.about-me-specific-text, 
+.about-me-specific-text,
 .more-details {
   text-align: justify; /* Text im Blocksatz ausrichten */
   font-size: 18px;
@@ -460,13 +439,17 @@ body {
   margin-top: 80px;
   padding-right: 50px;
   padding-left: 60px;
+  color: white; /* Textfarbe auf Weiß ändern */
 }
+
 .gemeinsam {
   text-align: center;
   margin-top: 80px;
   font-size: 20px;
   margin-bottom: 50px;
+  color: white; /* Textfarbe auf Weiß ändern */
 }
+
 /* Stil für den Abschnitt "More Details" */
 .more-details {
   margin-bottom: 20px; /* Unteren Abstand hinzufügen */
@@ -479,6 +462,7 @@ body {
   font-weight: bold;
   margin-top: 20px; /* Oberen Abstand hinzufügen */
   margin-bottom: 20px; /* Unteren Abstand hinzufügen */
+  color: white; /* Textfarbe auf Weiß ändern */
 }
 
 /* Stil für den Container der Social-Media-Icons */

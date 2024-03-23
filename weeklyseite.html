@@ -12,32 +12,49 @@
 
 <body>
   <header>
-    <h1>Vegan Dream</h1>
     <!-- Seitenübersicht/Menü -->
     <div class="menü-container">
     <!-- Hamburger Menü für kleinere Bildschirme (nur Botton) -->
     <button class="hamburger-menu-icon" onclick="toggleMenu()">&#9776;</button>
     </div>
-    <nav class="menue">
-    <ul>
-    <li><a href="index.html">Startseite</a></li>
-    <li><a href="rezepte.html">Rezepte</a></li>
-    <li><a href="weeklyseite.html">Weekly Highlight</a></li>
-    <li><a href="lifestyle.html">Lifestyle</a></li>
-    <li><a href="aboutme.html">About Me</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Vegan Dream</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Startseite</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rezepte.html">Rezepte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="weeklyseite.html">Weekly Highlight</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lifestyle.html">Lifestyle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutme.html">About Me</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Suche..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Suchen</button>
+          </form>
+        </div>
+      </div>
     </nav>
 
-
-<!-- Suchleiste -->
-    <div class="search-bar">
-    <input type="text" placeholder="Suche...">
-    <button type="submit">Suchen</button>
-    </div>
   </header>
    
     <!-- Cover-Bild -->
-    <section>
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
     <h2 class="weekly-highlight">Thema und Rezepte der Woche</h2>
     <div class="mealprep">
      <img src="Veganer Foodblog/weekly Seite/ella-olsson-P4jRJYN33wE-unsplash.jpg" alt="mealprep">
@@ -99,14 +116,19 @@
             <div class="Schlusssatz"><p>Mit veganem Meal Prep genießt du gesunde und leckere Mahlzeiten, ohne viel Zeit in der Küche verbringen zu müssen. Probiere es aus und entdecke die Vorteile für deinen Körper und deine Seele!</p></div>
             
           </article>
-        </section>
+        </div>
+      </div>
+    </section>
     <!-- Cover-Bild am Ende -->
       <div class="mealprep2">
         <img src="Veganer Foodblog/weekly Seite/ella-olsson-P4jRJYN33wE-unsplash.jpg" alt="mealprep2">
          </div>
 
 
-         <footer>
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
           <!-- Newsletterabonnementleiste -->
       <div class="newsletter">
         <p>Newsletter Subscription</p>
@@ -116,6 +138,8 @@
           <button type="submit">Subscribe</button>
         </form>
         </div>
+      </div>
+      <div class="col-md-6">
   <!-- Social Media -->
       <div class="social-media">
         <a href="LINK_ZU_DEINEM_INSTAGRAM_PROFIL"><img src="Veganer Foodblog/social media icons/instagram.png" alt="Instagram"></a>
@@ -124,6 +148,10 @@
         <a href="LINK_ZU_DEINEM_TIKTOK_PROFIL"><img src="Veganer Foodblog/social media icons/youtube.png" alt="Youtube"></a>
         <a href="LINK_ZU_DEINEM_YOUTUBE_PROFIL"><img src="Veganer Foodblog/social media icons/tiktok.png" alt="Tiktok"></a>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <!-- Details für einen vollständgien & real wirkenden Footer -->
       <div class="copy">
       <p>&copy; 2024 Vegan Dream</p>
@@ -140,8 +168,10 @@
       <!-- To top Button -->
   
       <button id="to-top-btn"><img src="Veganer Foodblog/Pfeil.png" alt="To Top"></button>
-  
-    </footer>
+    </div>
+  </div>
+</div>
+</footer>
   
     <script src="javasript file.js"></script>
   

@@ -12,84 +12,133 @@
 
 <body>
   <header>
-    <h1>Vegan Dream</h1>
-    <button class="hamburger-menu-icon" onclick="toggleMenu()">&#9776;</button>
-    <nav class="menue">
-      <ul>
-        <li><a href="index.html">Startseite</a></li>
-        <li><a href="rezepte.html">Rezepte</a></li>
-        <li><a href="weeklyseite.html">Weekly Highlight</a></li>
-        <li><a href="lifestyle.html">Lifestyle</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-      </ul>
-    </nav>
 
-    <div class="search-bar">
-      <input type="text" placeholder="Suche...">
-      <button type="submit">Suchen</button>
-    </div>
+      <button class="hamburger-menu-icon" onclick="toggleMenu()">&#9776;</button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Vegan Dream</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Startseite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rezepte.html">Rezepte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weeklyseite.html">Weekly Highlight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lifestyle.html">Lifestyle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">About Me</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Suche..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Suchen</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
   </header>
 
   <main>
-    <div class="beautyposts">
-      <div class="beauty-item">
-        <div class="thumbnail" style="background-image: url('Veganer Foodblog/Lifestyle/diana-light-pBBxMUCgwuU-unsplash.jpg')"></div>
-        <h3 id="2">Nachhaltige Beauty-Produkte</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="thumbnail-container">
+            <img class="thumbnail" src="Veganer Foodblog/Lifestyle/Nachhaltig.jpg" alt="Nachhaltige Beauty-Produkte" style="height: 400px;" >
+            <h3 class="thumbnail-title">Nachhaltige Beauty-Produkte</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumbnail-container">
+            <img class="thumbnail" src="Veganer Foodblog/Lifestyle/selfcare.jpg" alt="Meine Selfcare-Routinen" style="height: 400px;">
+            <h3 class="thumbnail-title">Meine Self-care Routinen</h3>
+          </div>
+        </div>
       </div>
-      <div class="beauty-item"> 
-        <div class="thumbnail" style="background-image: url('Veganer Foodblog/Lifestyle/enecta-cannabis-extracts-80wCkpt-IKE-unsplash.jpg')"></div>
-        <h3 id="3">Meine Self-care Routinen</h3>
-      </div>
-    </div>
-    <div class="thumbnail-container">
-      <img class="thumbnail" src="Veganer Foodblog/Lifestyle/protein.jpg" alt="5 vegan Proteinpulver im Test!">
-      <h3 class="thumbnail-title">5 vegan Proteinpulver im Test!</h3>
-    </div>
-    <div class="thumbnails-container">
-      <div class="thumbnail-item">
-        <img class="thumbnail" src="Veganer Foodblog/Lifestyle/sarah-dorweiler-fr0J5-GIVyg-unsplash.jpg" alt="Ökologisch abbaubare und nachhaltige Klamotten von H&M, Zara & Co.">
-        <h3 class="thumbnail-title">Ökologisch abbaubare und nachhaltige Klamotten von H&M, Zara & Co.</h3>
-      </div>
-      <div class="thumbnail-item">
-        <img class="thumbnail" src="Veganer Foodblog/Lifestyle/no-revisions-kSEXfDNIEGM-unsplash.jpg" alt="Hormonfreundliche Küchenutensilien ohne Weichmacher">
-        <h3 class="thumbnail-title">Hormonfreundliche Küchenutensilien ohne Weichmacher</h3>
+
+      <div class="row">
+        <div class="col">
+          <div class="thumbnail-container">
+            <img class="thumbnail" src="Veganer Foodblog/Lifestyle/protein.jpg" alt="5 vegan Proteinpulver im Test!" style="height: 300px;">
+            <h3 class="thumbnail-title">5 vegan Proteinpulver im Test!</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumbnail-container">
+            <img class="thumbnail" src="Veganer Foodblog/Lifestyle/fashion.jpg" alt="Ökologisch abbaubare und nachhaltige Klamotten von H&M, Zara & Co." style="height: 300px;">
+            <h3 class="thumbnail-title">Ökologisch abbaubare und nachhaltige Klamotten von H&M, Zara & Co.</h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="thumbnail-container">
+            <img class="thumbnail" src="Veganer Foodblog/Lifestyle/küche.jpg" alt="Hormonfreundliche Küchenutensilien ohne Weichmacher" style="height: 300px;">
+            <h3 class="thumbnail-title">Hormonfreundliche Küchenutensilien ohne Weichmacher</h3>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer>
-    <!-- Newsletterabonnementleiste -->
-    <div class="newsletter">
-      <p>Newsletter Subscription</p>
-      <form id="newsletter-form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-    <!-- Social Media -->
-    <div class="social-media">
-      <a href="LINK_ZU_DEINEM_INSTAGRAM_PROFIL"><img src="Veganer Foodblog/social media icons/instagram.png" alt="Instagram"></a>
-      <a href="LINK_ZU_DEINEM_PINTEREST_PROFIL"><img src="Veganer Foodblog/social media icons/facebook (1).png" alt="Facebook"></a>
-      <a href="LINK_ZU_DEINEM_YOUTUBE_PROFIL"><img src="Veganer Foodblog/social media icons/pinterest.png" alt="pinterest"></a>
-      <a href="LINK_ZU_DEINEM_TIKTOK_PROFIL"><img src="Veganer Foodblog/social media icons/youtube.png" alt="Youtube"></a>
-      <a href="LINK_ZU_DEINEM_YOUTUBE_PROFIL"><img src="Veganer Foodblog/social media icons/tiktok.png" alt="Tiktok"></a>
-    </div>
-    <!-- Details für einen vollständigen & realistischen Footer -->
-    <div class="copy">
-      <p>&copy; 2024 Vegan Dream</p>
-    </div>
-    <!-- Details für Impressum, Datenschutz, etc. -->
-    <div class="details footer">
-      <ul>
-        <li>IMPRESSUM </li>
-        <li>DATENSCHUTZERKLÄRUNG</li> 
-        <li>AGBS</li> 
-        <li>ALL RIGHTS RESERVED</li> 
-      </ul>
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Newsletterabonnementleiste -->
+        <div class="col-md-4 mb-3">
+          <div class="newsletter">
+            <h5>Newsletter Subscription</h5>
+            <form id="newsletter-form">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Social Media -->
+        <div class="col-md-4 mb-3">
+          <div class="social-media">
+            <h5>Follow us</h5>
+            <div class="d-flex">
+              <a href="LINK_ZU_DEINEM_INSTAGRAM_PROFIL" class="me-2"><img src="Veganer Foodblog/social media icons/instagram.png" alt="Instagram"></a>
+              <a href="LINK_ZU_DEINEM_PINTEREST_PROFIL" class="me-2"><img src="Veganer Foodblog/social media icons/facebook (1).png" alt="Facebook"></a>
+              <a href="LINK_ZU_DEINEM_YOUTUBE_PROFIL" class="me-2"><img src="Veganer Foodblog/social media icons/pinterest.png" alt="pinterest"></a>
+              <a href="LINK_ZU_DEINEM_TIKTOK_PROFIL" class="me-2"><img src="Veganer Foodblog/social media icons/youtube.png" alt="Youtube"></a>
+              <a href="LINK_ZU_DEINEM_YOUTUBE_PROFIL"><img src="Veganer Foodblog/social media icons/tiktok.png" alt="Tiktok"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Impressum, Datenschutz, etc. -->
+        <div class="col-md-4 mb-3">
+          <div class="footer-details">
+            <h5>Details</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">IMPRESSUM</a></li>
+              <li><a href="#">DATENSCHUTZERKLÄRUNG</a></li>
+              <li><a href="#">AGBS</a></li>
+              <li>ALL RIGHTS RESERVED</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- To top Button -->
-    <button id="to-top-btn"><img src="Veganer Foodblog/Pfeil.png" alt="To Top"></button>
+    <div class="text-center mt-4">
+      <button id="to-top-btn" class="btn btn-light"><img src="Veganer Foodblog/Pfeil.png" alt="To Top"></button>
+    </div>
+    <div class="container mt-3">
+      <div class="text-center">
+        <p>&copy; 2024 Vegan Dream</p>
+      </div>
+    </div>
   </footer>
 
   <script src="javasript file.js"></script>
