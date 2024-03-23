@@ -40,22 +40,6 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.1); /* Dezente Hintergrundfarbe beim Darüberfahren hinzufügen */
 }
 
-/* Hamburger-Menü für kleinere Bildschirme */
-.hamburger-menu-icon {
-  display: none;
-}
-
-@media screen and (max-width: 760px) {
-  /* Das Standard-Menü ausblenden */
-  .menue {
-    display: none;
-  }
-  
-  /* Das Hamburger-Menü anzeigen */
-  .hamburger-menu-icon {
-    display: block;
-  }
-}
 
 .search-bar {
   text-align: right;

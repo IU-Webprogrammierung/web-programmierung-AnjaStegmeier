@@ -25,16 +25,3 @@ document.getElementById("to-top-btn").addEventListener("click", function() {
     behavior: "smooth"
   });
 });
-// Funktion Hamburger Menü
-function toggleMenu() {
-  var menü = document.querySelector('.menü');
-  menü.classList.toggle('show');
-}
-function toggleMenu() {
-  var menu = document.querySelector('.menue');
-  if (menu.style.display === 'block') {
-    menu.style.display = 'none';
-  } else {
-    menu.style.display = 'block';
-  }
-}
