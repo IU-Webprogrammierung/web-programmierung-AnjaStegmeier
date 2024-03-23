@@ -91,18 +91,14 @@
   <footer class="bg-dark text-light py-5">
     <div class="container">
       <div class="row">
-        <!-- Newsletterabonnementleiste -->
-        <div class="col-md-4 mb-3">
-          <div class="newsletter">
-            <h5>Newsletter Subscription</h5>
-            <form id="newsletter-form">
-              <div class="input-group">
-                <input type="email" class="form-control" placeholder="Your email" required>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
+<!-- Newsletterabonnementleiste -->
+<div class="newsletter d-flex">
+  <p class="me-2">Newsletter Subscription</p>
+  <form id="newsletter-form" class="d-flex">
+    <input class="form-control me-2" type="email" id="email" name="email" placeholder="Email" required>
+    <button class="btn btn-outline-success" type="submit">Subscribe</button>
+  </form>
+</div>
         <!-- Social Media -->
         <div class="col-md-4 mb-3">
           <div class="social-media">
