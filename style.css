@@ -12,11 +12,9 @@ header {
   text-align: center;
   padding: 10px 20px;
 }
-
-.h1 {
-  text-align: center;
-  width: 100%;
-  letter-spacing: 20px;
+.with-margin {
+  font-size: 10vw;
+  margin-bottom: 40px;
 }
 nav ul {
   list-style-type: none;
