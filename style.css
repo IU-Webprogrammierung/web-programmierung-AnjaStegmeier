@@ -314,15 +314,12 @@ footer {
 
 /* Inhaltformatierung Lifestyleseite */
 /* Anpassung der Thumbnail-Container */
-.thumbnail-container {
-  margin-top: 20px; /* oberer Abstand */
-  margin-bottom: 20px; /* unterer Abstand */
-}
-
 /* Anpassung der Thumbnail-Container */
 .thumbnail-container {
   margin-top: 20px; /* oberer Abstand */
   margin-bottom: 20px; /* unterer Abstand */
+  position: relative; /* Damit die Überschrift innerhalb des Containers bleibt */
+  overflow: hidden; /* Damit die Überschrift nicht über das Bild hinausragt */
 }
 
 /* Anpassung der Thumbnail */
@@ -332,23 +329,29 @@ footer {
   height: auto;
   border-radius: 10px;
   overflow: hidden; /* Damit die Überschrift innerhalb des Bildes bleibt */
+  transition: transform 0.5s ease; /* Übergangseffekt für Hover */
 }
 
 /* Anpassung der Thumbnail-Titel */
 .thumbnail-title {
-  font-size: 18px; /* Ändern Sie die Schriftgröße nach Bedarf */
+  position: absolute;
+  bottom: -40px; /* Startposition der Schrift */
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe der Schrift */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px; /* Schriftgröße */
+  transition: bottom 0.5s ease; /* Übergangseffekt für Hover */
 }
 
-    /* Stil für die Hover-Vergrößerung der Bilder */
-    .thumbnail-container:hover .thumbnail,
-    .thumbnail-container:hover h3.thumbnail-title {
-      transform: scale(1.1);
-      transition: transform 0.5s ease;
-    }
-    /* Stil für die Bilderunterschrift */
-    .thumbnail-title {
-      transition: transform 0.5s ease;
-    }
+/* Stil für die Hover-Vergrößerung der Bilder und der Bilderunterschrift */
+.thumbnail-container:hover .thumbnail,
+.thumbnail-container:hover .thumbnail-title {
+  transform: scale(1.1); /* Vergrößere das Bild */
+  bottom: 20px; /* Bewege die Schrift nach oben */
+}
 /* Zentrierung der Seitenüberschrift "About Me" */
 /* Allgemeine Stile */
 body {
