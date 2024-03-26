@@ -145,12 +145,6 @@ footer {
 /* Inhaltformatierung Index-Seite */
 /* Allgemeine Stile */
 
-.h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .title {
   text-align: center;
@@ -163,6 +157,7 @@ footer {
   margin-top: 30px;
   font-size: 16px;
   text-align: center;
+  margin-bottom: 30px;
 }
 /* Media Query für kleinere Bildschirmgrößen */
 @media screen and (min-width: 768px) {
@@ -171,14 +166,6 @@ footer {
   }
 }
 
-.latest-posts {
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 768px) {
-  .latest-posts {
-    margin-bottom: 150px; 
-  }
-}
 /* Anpassung für kleinere Bildschirme */
 @media screen and (max-width: 768px) {
   .pic,
@@ -218,36 +205,6 @@ footer {
 
 /* Inhaltformatierung Croissant Rezept */
 
-.Schritt1,
-.Schritt2,
-.Schritt3,
-.Schritt4,
-.Schritt5,
-.Schritt6, 
-.Schritt7,
-.Schritt8,
-.Schritt9,
-.Schritt10,
-.Schritt11,
-.Schritt12,
-.Schritt13,
-.Schritt14,
-.Schritt15,
-.Schritt16,
-.Schritt17 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.Tipps {
-  margin-top: 50px;
-}
-
-.Teigbearbeitung {
-  margin-top: 40px;
-  padding-left: 80px;
-}
-
 .Anleitung-container {
   display: flex;
   justify-content: center;
@@ -270,13 +227,11 @@ footer {
   text-align: center;
   padding-top: 10px;
   font-size: larger;
+  margin-bottom: 50px;
 }
 
 /* Inhaltformatierung Weeklyseite */
-.weekly-highlight {
- align-items: center;
- text-align: center;
-}
+
 .Inhalttext {
   padding-left: 80px;
   padding-right: 80px;
@@ -288,36 +243,15 @@ footer {
   object-fit: cover;
 }
 
-.Titel-Vorteile {
-  margin-top: 30px;
-}
-.Vorteile {
-  margin-top:30px;
-  margin-bottom: 40px;
-}
-
-.Titel-Hilfreiche-Tipps {
-  margin-top:30px;
-  margin-bottom: 20px;
-}
-
-.Hilfreiche-Tipps {
-  margin-top:20px; 
-  margin-bottom: 40px;
-}
-
-.Schlusssatz {
-  margin-top: 40px;
-}
 
 /* Inhaltformatierung Lifestyleseite */
-/* Anpassung der Thumbnail-Container */
-/* Anpassung der Thumbnail-Container */
+
+/* Gemeinsame Regeln für alle Bildcontainer */
 .thumbnail-container {
-  margin-top: 20px; /* oberer Abstand */
-  margin-bottom: 20px; /* unterer Abstand */
-  position: relative; /* Damit die Überschrift innerhalb des Containers bleibt */
-  overflow: hidden; /* Damit die Überschrift nicht über das Bild hinausragt */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Anpassung der Thumbnail */
@@ -326,29 +260,48 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  overflow: hidden; /* Damit die Überschrift innerhalb des Bildes bleibt */
-  transition: transform 0.5s ease; /* Übergangseffekt für Hover */
+  overflow: hidden;
+  transition: transform 0.5s ease;
 }
 
 /* Anpassung der Thumbnail-Titel */
 .thumbnail-title {
   position: absolute;
-  bottom: -40px; /* Startposition der Schrift */
+  bottom: -40px;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe der Schrift */
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
   padding: 10px;
-  font-size: 18px; /* Schriftgröße */
-  transition: bottom 0.5s ease; /* Übergangseffekt für Hover */
+  font-size: 18px;
+  transition: bottom 0.5s ease;
 }
 
 /* Stil für die Hover-Vergrößerung der Bilder und der Bilderunterschrift */
 .thumbnail-container:hover .thumbnail,
 .thumbnail-container:hover .thumbnail-title {
-  transform: scale(1.1); /* Vergrößere das Bild */
-  bottom: 20px; /* Bewege die Schrift nach oben */
+  transform: scale(1.1);
+  bottom: 20px;
+}
+
+/* Media Query für kleinere Bildschirmgrößen */
+@media (max-width: 768px) {
+  /* Deaktivieren des Hovereffekts */
+  .thumbnail-container .thumbnail,
+  .thumbnail-container .thumbnail-title {
+    transition: none;
+  }
+
+  /* Zurücksetzen der Titelposition */
+  .thumbnail-container .thumbnail-title {
+    bottom: 0;
+  }
+
+  /* Anpassen der Schriftgröße für kleinere Bildschirmgrößen */
+  .thumbnail-title {
+    font-size: 16px;
+  }
 }
 /* Zentrierung der Seitenüberschrift "About Me" */
 /* Allgemeine Stile */
@@ -356,12 +309,7 @@ body {
   font-family: 'Open Sans', sans-serif; /* Schriftart festlegen */
 }
 
-/* Stil für h2-Überschriften */
-.title-aboutme {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 20px; /* Oberer Abstand hinzufügen */
-}
+
 
 /* Stil für den Text "The head behind" */
 .head {
@@ -375,6 +323,7 @@ body {
 .profile {
   text-align: center;
   margin-bottom: 20px; /* Unteren Abstand hinzufügen */
+  margin-top: 50px;
 }
 
 .profile img {
